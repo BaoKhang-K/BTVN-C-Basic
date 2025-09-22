@@ -17,19 +17,24 @@ int main()
     printf("diem trung binh %f\n", diem_tb );
 
     if(diem_tb >= 8.0)
-        printf("gioi\n");
     {
-    else 
-        if (diem_tb >= 6.5 && diem_tb < 8.0)
-        printf("Kha\n");
-    else 
-        if (diem_tb >= 5.0 && diem_tb < 6.5)
+        printf("gioi\n");
+    }
+    {
+    else if (diem_tb >= 6.5 && diem_tb < 8.0)
+        {
+            printf("Kha\n");
+        }    
+    else if (diem_tb >= 5.0 && diem_tb < 6.5)
+    {
         printf("Trung binh\n");
+    }
     else
+    {
         printf("Yeu\n");
     }
 
-
+    }
 
     return 0;
 }
